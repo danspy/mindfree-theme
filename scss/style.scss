@@ -1,13 +1,83 @@
-// vars
-$color-primary: #8b0000;
-$font: 'Arial', sans-serif;
+/* ---------- reset ---------- */
+@import 'reset.scss';
 
-// general settings
-body {
-	background-color: #e9e9e9;
+// vars & mixins
+$color-primary: #8b0000;
+$color-dark: #333333;
+$color-bright: #ffffff;
+$font: 'Arial', sans-serif;
+$size-h1: 2rem;
+$size-h2: 1.750rem;
+$size-h3: 1.2rem;
+
+@mixin box-sizing($type:border-box) {
+	-webkit-box-sizing: $type;
+	   -moz-box-sizing: $type;
+	        box-sizing: $type;
 }
 
-// typography
-h1, h2, h3, h4, h5, h6 {
-	font-style: $font;
+@mixin transition($transition-property, $transition-time, $transition-method) {
+	-webkit-transition: $transition-property $transition-time $transition-method;
+	   -moz-transition: $transition-property $transition-time $transition-method;
+	     -o-transition: $transition-property $transition-time $transition-method;
+	        transition: $transition-property $transition-time $transition-method;
+}
+
+@mixin headline-style($color, $size) {
+	font: {
+		family: $font;
+		size: $size;
+		weight: 100;
+	}
+	color: $color;
+	margin-bottom: 1.5rem;
+}
+
+/* ---------- general settings ---------- */
+*, *:before, *:after {
+	@include box-sizing;
+}
+
+body {
+	background-color: #e9e9e9;
+	font-family: $font;
+	font-size: 1em;
+}
+
+a {
+	color: $color-primary;
+	text-decoration: none;
+	@include transition(all, .5s, ease-in-out);
+	&:hover {
+		color: lighten($color-primary, 10%);
+	}
+}
+
+/* ---------- header ---------- */
+header {
+	padding: {
+		top: 100px;
+		bottom: 100px;
+	}
+	margin-bottom: 50px;
+	background: $color-dark;
+
+	& h2 {
+		@include headline-style($color-bright, $size-h2);
+	}
+
+	& h3 {
+		@include headline-style($color-bright, $size-h3);
+	}
+}
+
+/* ---------- typography ---------- */
+h1 {
+	@include headline-style($color-primary, $size-h1);
+}
+h2 {
+	@include headline-style($color-primary, $size-h2);
+}
+h3 {
+	@include headline-style($color-primary, $size-h3);
 }

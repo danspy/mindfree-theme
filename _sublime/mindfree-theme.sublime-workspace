@@ -16,10 +16,34 @@
 	"buffers":
 	[
 		{
+			"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/css/style.css",
+			"settings":
+			{
+				"buffer_size": 1613,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 712,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/scss/foundation/components/_grid.scss",
+			"settings":
+			{
+				"buffer_size": 7450,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/index.html",
 			"settings":
 			{
-				"buffer_size": 6767,
+				"buffer_size": 791,
 				"line_ending": "Unix"
 			}
 		}
@@ -60,10 +84,10 @@
 	},
 	"file_history":
 	[
+		"/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/index.html",
 		"/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/css/style.css",
 		"/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/scss/style.scss",
 		"/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/_foundation/index.html",
-		"/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/index.html",
 		"/Users/danieljahnichen/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/danieljahnichen/Documents/sass-test/index.html",
 		"/Users/danieljahnichen/Documents/sass-test/css/style.css",
@@ -104,28 +128,83 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/index.html",
+					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/css/style.css",
 					"settings":
 					{
-						"buffer_size": 6767,
+						"buffer_size": 1613,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								420,
-								420
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/scss/style.scss",
+					"settings":
+					{
+						"buffer_size": 712,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/scss/foundation/components/_grid.scss",
+					"settings":
+					{
+						"buffer_size": 7450,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -138,8 +217,36 @@
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 3,
+					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/index.html",
+					"settings":
+					{
+						"buffer_size": 791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -162,21 +269,21 @@
 				1
 			],
 			[
+				1,
 				0,
-				1,
-				1,
-				2
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.553281087409,
 			1.0
 		]
 	},
