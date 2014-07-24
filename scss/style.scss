@@ -1,0 +1,41 @@
+// vars
+$color-primary: #8b0000;
+$font: 'Arial', sans-serif;
+$bgcolor: #f6f6f6;
+
+/* Styles */
+
+body {
+	font-family: $font;
+	background: $bgcolor;
+}
+
+a {
+	color: $color-primary;
+	text-decoration: none;
+	&:hover {
+		color: #333333;
+	}
+}
+
+/* ---------- header ---------- */
+
+header {
+	height: 300px;
+
+	#home & {
+		height: 100px;
+	}
+}
+
+/* ---------- post types ---------- */
+
+/* standard post */
+
+article.post {
+	font-family: $font;
+	margin: {
+		top: 20px;
+		bottom: 30px;
+	}
+}
