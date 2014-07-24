@@ -1,29 +1,7 @@
-/* Styles */
 body {
-  font-family: "Arial", sans-serif;
-  background: #f6f6f6;
+  background-color: #e9e9e9;
 }
 
-a {
-  color: darkred;
-  text-decoration: none;
-}
-a:hover {
-  color: #333333;
-}
-
-/* ---------- header ---------- */
-header {
-  height: 300px;
-}
-#home header {
-  height: 100px;
-}
-
-/* ---------- post types ---------- */
-/* standard post */
-article.post {
-  font-family: "Arial", sans-serif;
-  margin-top: 20px;
-  margin-bottom: 30px;
+h1, h2, h3, h4, h5, h6 {
+  font-style: "Arial", sans-serif;
 }
