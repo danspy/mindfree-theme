@@ -1,0 +1,22 @@
+@mixin box-sizing($type:border-box) {
+	-webkit-box-sizing: $type;
+	   -moz-box-sizing: $type;
+	        box-sizing: $type;
+}
+
+@mixin transition($transition-property, $transition-time, $transition-method) {
+	-webkit-transition: $transition-property $transition-time $transition-method;
+	   -moz-transition: $transition-property $transition-time $transition-method;
+	     -o-transition: $transition-property $transition-time $transition-method;
+	        transition: $transition-property $transition-time $transition-method;
+}
+
+@mixin headline-style($color, $size) {
+	font: {
+		family: $font;
+		size: $size;
+		weight: 100;
+	}
+	color: $color;
+	margin-bottom: 1.5rem;
+}

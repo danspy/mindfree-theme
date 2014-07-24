@@ -4,40 +4,11 @@
 	Version: 0.1
 */
 
-/* ---------- reset ---------- */
-@import 'reset.scss';
-
-// vars & mixins
-$color-primary: #8b0000;
-$color-dark: #333333;
-$color-bright: #ffffff;
-$font: 'Arial', sans-serif;
-$size-h1: 2rem;
-$size-h2: 1.750rem;
-$size-h3: 1.2rem;
-
-@mixin box-sizing($type:border-box) {
-	-webkit-box-sizing: $type;
-	   -moz-box-sizing: $type;
-	        box-sizing: $type;
-}
-
-@mixin transition($transition-property, $transition-time, $transition-method) {
-	-webkit-transition: $transition-property $transition-time $transition-method;
-	   -moz-transition: $transition-property $transition-time $transition-method;
-	     -o-transition: $transition-property $transition-time $transition-method;
-	        transition: $transition-property $transition-time $transition-method;
-}
-
-@mixin headline-style($color, $size) {
-	font: {
-		family: $font;
-		size: $size;
-		weight: 100;
-	}
-	color: $color;
-	margin-bottom: 1.5rem;
-}
+/* ---------- reset & import ---------- */
+@import 
+'reset.scss',
+'_var.scss',
+'_mixins.scss';
 
 /* ---------- general settings ---------- */
 *, *:before, *:after {
