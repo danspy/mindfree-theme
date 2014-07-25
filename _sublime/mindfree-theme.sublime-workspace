@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"colo",
+				"color-dark"
+			],
+			[
 				"text-",
 				"text-decoration"
 			],
@@ -16,18 +20,10 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/css/style.css",
-			"settings":
-			{
-				"buffer_size": 1613,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/scss/style.scss",
 			"settings":
 			{
-				"buffer_size": 712,
+				"buffer_size": 1763,
 				"line_ending": "Unix"
 			}
 		},
@@ -40,10 +36,18 @@
 			}
 		},
 		{
+			"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/css/style.css",
+			"settings":
+			{
+				"buffer_size": 2473,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/index.html",
 			"settings":
 			{
-				"buffer_size": 791,
+				"buffer_size": 1046,
 				"line_ending": "Unix"
 			}
 		}
@@ -109,6 +113,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"typy",
+			"#ffffff",
 			"stylesheets",
 			"$color"
 		],
@@ -128,51 +134,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/css/style.css",
-					"settings":
-					{
-						"buffer_size": 1613,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/scss/style.scss",
 					"settings":
 					{
-						"buffer_size": 712,
+						"buffer_size": 1763,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								119,
+								119
 							]
 						],
 						"settings":
@@ -187,7 +165,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/scss/foundation/components/_grid.scss",
 					"settings":
 					{
@@ -198,13 +176,41 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								292,
+								292
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/css/style.css",
+					"settings":
+					{
+						"buffer_size": 2473,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								982,
+								982
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -225,15 +231,15 @@
 					"file": "/Users/danieljahnichen/Documents/Web_Projects/mindfree-theme/index.html",
 					"settings":
 					{
-						"buffer_size": 791,
+						"buffer_size": 1046,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								511,
+								511
 							]
 						],
 						"settings":

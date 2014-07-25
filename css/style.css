@@ -73,10 +73,11 @@ a:hover {
 
 /* ---------- header ---------- */
 header {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-bottom: 50px;
   background: #333333;
+  text-align: center;
 }
 header h2 {
   font-family: "Arial", sans-serif;
@@ -91,6 +92,18 @@ header h3 {
   font-weight: 100;
   color: white;
   margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 48em) {
+  header {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 64em) {
+  header {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 /* ---------- typography ---------- */
