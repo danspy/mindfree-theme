@@ -34,11 +34,12 @@ a {
 /* ---------- header ---------- */
 header {
 	padding: {
-		top: 100px;
-		bottom: 100px;
+		top: 50px;
+		bottom: 50px;
 	}
 	margin-bottom: 50px;
 	background: $color-dark;
+	text-align: center;
 
 	& h2 {
 		@include headline-style($color-bright, $size-h2);
@@ -46,6 +47,20 @@ header {
 
 	& h3 {
 		@include headline-style($color-bright, $size-h3);
+	}
+
+	@media screen and (min-width: $mq-medium) {
+		padding: {
+			top: 80px;
+			bottom: 80px;
+		}
+	}
+
+	@media screen and (min-width: $mq-large) {
+		padding: {
+			top: 100px;
+			bottom: 100px;
+		}
 	}
 }
 
