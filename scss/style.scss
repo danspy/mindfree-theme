@@ -74,8 +74,15 @@ header {
 
 	& h2 {
 		@extend %headline;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		color: $color-bright;
+
+		& a {
+			color: $color-bright;
+			&:hover {
+				color: darken($color-bright, 20%);
+			}
+		}
 
 		@include breakpoint($mq-large) {
 			font-size: 2em;
@@ -83,7 +90,7 @@ header {
 	}
 
 	& p {
-		color: $color-bright;
+		color: lighten($color-dark, 20%);
 	}
 
 	@include breakpoint($mq-medium) {
@@ -174,12 +181,18 @@ header {
 		}
 	}
 	&.link {
-		background-color: lighten($color-dark, 70%);
+		background-color: lighten($color-dark, 75%);
 
 		& blockquote {
 			border-left: solid 4px $color-primary;
 			padding-left: 20px;
 			margin-bottom: 20px;
+		}
+	}
+	&.video {
+		& .video-container {
+			margin: 0 auto 30px;
+		  	max-width: 1280px;
 		}
 	}
 
