@@ -42,7 +42,7 @@ header {
 	text-align: center;
 
 	& h2 {
-		@include headline-style($color-bright, $size-h2);
+		@include headline-style($color-bright, 2em);
 	}
 
 	& h3 {
