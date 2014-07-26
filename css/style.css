@@ -135,16 +135,20 @@ header p {
 }
 
 /* ---------- content ----------  */
+#posts {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 48em) {
+  #posts {
+    margin-top: 50px;
+  }
+}
+
 .post {
   line-height: 1.6em;
   padding-top: 50px;
   padding-bottom: 50px;
-}
-.post:nth-of-type(odd) {
-  background-color: white;
-}
-.post:nth-of-type(even) {
-  background-color: #fafafa;
 }
 .post p {
   padding-bottom: 20px;
@@ -157,12 +161,38 @@ header p {
   margin: 0 auto 30px;
   display: inherit;
 }
+.post.quote {
+  background-color: #ff9900;
+  color: white;
+}
+.post.quote .quoteAuthor {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 48em) {
+  .post.quote .quoteAuthor {
+    text-align: right;
+  }
+}
+.post.quote .quoteAuthor span:before {
+  content: '- ';
+}
+.post.quote .quoteAuthor span:after {
+  content: ' -';
+}
+.post.quote a, .post.quote #meta {
+  color: rgba(255, 255, 255, 0.6);
+}
+.post.quote a:hover {
+  color: white;
+}
+.post:hover #meta {
+  opacity: 1;
+}
 
 #meta {
   color: #999999;
-  border-top: solid 1px #e9e9e9;
-  margin-top: 50px;
-  padding-top: 20px;
+  margin-top: 30px;
   font-size: 0.8em;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -170,6 +200,9 @@ header p {
   transition: all 0.5s ease-in-out;
 }
 @media screen and (min-width: 48em) {
+  #meta {
+    opacity: 0;
+  }
   #meta .columns:nth-of-type(2) {
     text-align: right;
   }
