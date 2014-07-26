@@ -8,7 +8,8 @@
 @import 
 'reset.scss',
 '_var.scss',
-'_mixins.scss';
+'_mixins.scss',
+url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|Roboto+Slab:400,700);
 
 /* ---------- general settings ---------- */
 *, *:before, *:after {
@@ -49,12 +50,31 @@ header {
 }
 
 /* ---------- typography ---------- */
+%headline {
+	font: {
+		family: $font-headline;
+		weight: 100;
+	}
+	color: $color-primary;
+	margin-bottom: 1.5rem;
+}
 h1 {
-	@include headline-style($color-primary, $size-h1);
+	@extend %headline;
+	font-size: $size-h1;
 }
 h2 {
-	@include headline-style($color-primary, $size-h2);
+	@extend %headline;
+	font-size: $size-h2;
 }
 h3 {
-	@include headline-style($color-primary, $size-h3);
+	@extend %headline;
+	font-size: $size-h3;
+}
+
+/* ---------- content ----------  */
+%post {
+	line-height: 1.5em;
+}
+.post {
+	@extend %post;
 }
