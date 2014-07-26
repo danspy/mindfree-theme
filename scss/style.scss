@@ -43,7 +43,10 @@ header {
 	text-align: center;
 
 	& h2 {
-		@include headline-style($color-bright, 2em);
+		@include headline-style($color-bright, 1.5em);
+		@media screen and (min-width: $mq-large) {
+			font-size: 2em;
+		}
 	}
 
 	& p {
@@ -73,14 +76,24 @@ header {
 	}
 	color: $color-primary;
 	margin-bottom: 1.5rem;
+	text-transform: uppercase;
 }
+
 h1 {
 	@extend %headline;
-	font-size: $size-h1;
+	font-size: $size-h1 - .3rem;
+	
+	@media screen and (min-width: $mq-large) {
+		font-size: $size-h1;
+	}
 }
 h2 {
 	@extend %headline;
-	font-size: $size-h2;
+	font-size: $size-h2 - .3rem;
+
+	@media screen and (min-width: $mq-large) {
+		font-size: $size-h2;
+	}
 }
 h3 {
 	@extend %headline;
@@ -93,7 +106,7 @@ h3 {
 }
 %post {
 	line-height: 1.6em;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .post {
@@ -102,6 +115,7 @@ h3 {
 	&.text {}
 	&.photo {
 		& img {
+			max-width: 100%;
 			margin: 0 auto 30px;
 			display: inherit;
 		}
