@@ -26,6 +26,7 @@ a {
 	color: $color-primary;
 	text-decoration: none;
 	@include transition(all, .5s, ease-in-out);
+
 	&:hover {
 		color: lighten($color-primary, 10%);
 	}
@@ -45,8 +46,8 @@ header {
 		@include headline-style($color-bright, 2em);
 	}
 
-	& h3 {
-		@include headline-style($color-bright, $size-h3);
+	& p {
+		color: $color-bright;
 	}
 
 	@media screen and (min-width: $mq-medium) {
@@ -87,9 +88,22 @@ h3 {
 }
 
 /* ---------- content ----------  */
-%post {
-	line-height: 1.5em;
+#posts {
+
 }
+%post {
+	line-height: 1.6em;
+	margin-bottom: 50px;
+}
+
 .post {
 	@extend %post;
+
+	&.text {}
+	&.photo {
+		& img {
+			margin: 0 auto 30px;
+			display: inherit;
+		}
+	}
 }

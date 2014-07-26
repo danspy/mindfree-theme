@@ -87,12 +87,8 @@ header h2 {
   color: white;
   margin-bottom: 1.5rem;
 }
-header h3 {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.2rem;
-  font-weight: 100;
+header p {
   color: white;
-  margin-bottom: 1.5rem;
 }
 @media screen and (min-width: 48em) {
   header {
@@ -129,5 +125,11 @@ h3 {
 
 /* ---------- content ----------  */
 .post {
-  line-height: 1.5em;
+  line-height: 1.6em;
+  margin-bottom: 50px;
+}
+
+.post.photo img {
+  margin: 0 auto 30px;
+  display: inherit;
 }
