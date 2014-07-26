@@ -106,12 +106,18 @@ h3 {
 header {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #222222;
+  background: #333333;
   text-align: center;
 }
 header h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: white;
+}
+header h2 a {
+  color: white;
+}
+header h2 a:hover {
+  color: #cccccc;
 }
 @media screen and (min-width: 64em) {
   header h2 {
@@ -119,8 +125,7 @@ header h2 {
   }
 }
 header p {
-  color: #555555;
-  text-transform: uppercase;
+  color: #666666;
 }
 @media screen and (min-width: 48em) {
   header {
@@ -137,6 +142,7 @@ header p {
 
 /* ---------- content ----------  */
 #posts {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 48em) {
@@ -149,12 +155,22 @@ header p {
   line-height: 1.6em;
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
+  border-bottom: solid 1px white;
 }
 .post p {
   padding-bottom: 20px;
 }
 .post p:last-child {
   padding-bottom: 0;
+}
+.post h2 {
+  text-align: center;
+}
+@media screen and (min-width: 48em) {
+  .post h2 {
+    text-align: left;
+  }
 }
 .post.photo img {
   max-width: 100%;
@@ -186,12 +202,24 @@ header p {
 .post.quote a:hover {
   color: white;
 }
+.post.link {
+  background-color: #f2f2f2;
+}
+.post.link blockquote {
+  border-left: solid 4px #ff9900;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.post.video .video-container {
+  margin: 0 auto 30px;
+  max-width: 1280px;
+}
 .post:hover #meta {
   opacity: 1;
 }
 
 #meta {
-  color: #888888;
+  color: #999999;
   margin-top: 30px;
   font-size: 0.8em;
   -webkit-transition: all 0.5s ease-in-out;
@@ -213,13 +241,13 @@ header p {
 
 /* ---------- footer ---------- */
 footer {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 0.8em;
 }
 footer nav.footerNav {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 footer nav.footerNav li {
   display: block;
@@ -232,6 +260,5 @@ footer nav.footerNav li {
   }
 }
 footer p {
-  color: #555555;
-  font-size: .8em;
+  color: #666666;
 }
