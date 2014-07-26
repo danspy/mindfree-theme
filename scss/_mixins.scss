@@ -11,12 +11,8 @@
 	        transition: $transition-property $transition-time $transition-method;
 }
 
-@mixin headline-style($color, $size) {
-	font: {
-		family: $font-headline;
-		size: $size;
-		weight: 100;
+@mixin breakpoint($mq-width) {
+	@media screen and (min-width: $mq-width) {
+		@content;
 	}
-	color: $color;
-	margin-bottom: 1.5rem;
 }

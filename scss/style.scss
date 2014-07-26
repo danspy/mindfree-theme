@@ -6,7 +6,7 @@
 
 /* ---------- reset & import ---------- */
 @import 
-'reset.scss',
+'_reset.scss',
 '_var.scss',
 '_mixins.scss',
 url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|Roboto+Slab:400,700);
@@ -17,54 +17,17 @@ url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|Ro
 }
 
 body {
-	background-color: #e9e9e9;
 	font-family: $font;
-	font-size: 1em;
+	font-size: $size-standard;
 }
 
 a {
 	color: $color-primary;
 	text-decoration: none;
-	@include transition(all, .5s, ease-in-out);
+	@include transition(all, .3s, ease-in-out);
 
 	&:hover {
-		color: lighten($color-primary, 10%);
-	}
-}
-
-/* ---------- header ---------- */
-header {
-	padding: {
-		top: 50px;
-		bottom: 50px;
-	}
-	margin-bottom: 50px;
-	background: $color-dark;
-	text-align: center;
-
-	& h2 {
-		@include headline-style($color-bright, 1.5em);
-		@media screen and (min-width: $mq-large) {
-			font-size: 2em;
-		}
-	}
-
-	& p {
-		color: $color-bright;
-	}
-
-	@media screen and (min-width: $mq-medium) {
-		padding: {
-			top: 80px;
-			bottom: 80px;
-		}
-	}
-
-	@media screen and (min-width: $mq-large) {
-		padding: {
-			top: 100px;
-			bottom: 100px;
-		}
+		color: lighten($color-primary, 30%);
 	}
 }
 
@@ -82,8 +45,8 @@ header {
 h1 {
 	@extend %headline;
 	font-size: $size-h1 - .3rem;
-	
-	@media screen and (min-width: $mq-large) {
+
+	@include breakpoint($mq-large) {
 		font-size: $size-h1;
 	}
 }
@@ -91,7 +54,7 @@ h2 {
 	@extend %headline;
 	font-size: $size-h2 - .3rem;
 
-	@media screen and (min-width: $mq-large) {
+	@include breakpoint($mq-large) {
 		font-size: $size-h2;
 	}
 }
@@ -100,17 +63,68 @@ h3 {
 	font-size: $size-h3;
 }
 
-/* ---------- content ----------  */
-#posts {
+/* ---------- header ---------- */
+header {
+	padding: {
+		top: 50px;
+		bottom: 50px;
+	}
+	background: $color-dark;
+	text-align: center;
 
+	& h2 {
+		@extend %headline;
+		font-size: 1.5em;
+		color: $color-bright;
+
+		@include breakpoint($mq-large) {
+			font-size: 2em;
+		}
+	}
+
+	& p {
+		color: $color-bright;
+	}
+
+	@include breakpoint($mq-medium) {
+		padding: {
+			top: 80px;
+			bottom: 80px;
+		}
+	}
+
+	@include breakpoint($mq-large) {
+		padding: {
+			top: 100px;
+			bottom: 100px;
+		}
+	}
 }
-%post {
-	line-height: 1.6em;
-	margin-bottom: 100px;
-}
+
+/* ---------- content ----------  */
+#posts {}
 
 .post {
-	@extend %post;
+	line-height: 1.6em;
+	padding: {
+		top: 50px;
+		bottom: 50px;
+	}
+
+	&:nth-of-type(odd) {
+		background-color: $color-bright;
+	}
+	&:nth-of-type(even) {
+		background-color: darken($color-bright, 2%);
+	}
+
+	& p {
+		padding-bottom: 20px;
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
 
 	&.text {}
 	&.photo {
@@ -119,5 +133,54 @@ h3 {
 			margin: 0 auto 30px;
 			display: inherit;
 		}
+	}
+}
+
+#meta {
+	color: lighten($color-dark, 40%);
+	border-top: solid 1px #e9e9e9;
+	margin-top: 50px;
+	padding-top: 20px;
+	font-size: $size-standard - .2em;
+	@include transition(all, .5s, ease-in-out);
+
+	@include breakpoint($mq-medium) {
+		& .columns:nth-of-type(2) {
+			text-align: right;
+		}
+	}
+
+	& .date {
+		margin-right: 20px;
+	}
+}
+
+/* ---------- footer ---------- */
+footer {
+	margin: {
+		top: 30px;
+		bottom: 50px;
+	}
+	text-align: center;
+	font-size: $size-standard - .2em;
+
+	& nav.footerNav {
+		margin-bottom: 15px;
+
+		& li {
+			display: block;
+			margin: {
+				left: 10px;
+				right: 10px;
+			}
+
+			@include breakpoint($mq-medium) {
+				display: inline;
+			}
+		}
+	}
+
+	& p {
+		color: lighten($color-dark, 20%);
 	}
 }
