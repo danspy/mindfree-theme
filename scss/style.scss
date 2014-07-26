@@ -83,7 +83,8 @@ header {
 	}
 
 	& p {
-		color: $color-bright;
+		color: lighten($color-dark, 20%);
+		text-transform: uppercase;
 	}
 
 	@include breakpoint($mq-medium) {
@@ -103,10 +104,7 @@ header {
 
 /* ---------- content ----------  */
 #posts {
-	margin: {
-		top: 0;
-		bottom: 20px;
-	}
+	margin-bottom: 20px;
 
 	@include breakpoint($mq-medium) {
 		margin-top: 50px;
@@ -190,14 +188,14 @@ header {
 /* ---------- footer ---------- */
 footer {
 	margin: {
-		top: 30px;
+		top: 50px;
 		bottom: 50px;
 	}
 	text-align: center;
 	font-size: $size-standard - .2em;
 
 	& nav.footerNav {
-		margin-bottom: 15px;
+		margin-bottom: 30px;
 
 		& li {
 			display: block;
@@ -214,5 +212,6 @@ footer {
 
 	& p {
 		color: lighten($color-dark, 20%);
+		font-size: .8em;
 	}
 }

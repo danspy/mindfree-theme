@@ -106,7 +106,7 @@ h3 {
 header {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #333333;
+  background: #222222;
   text-align: center;
 }
 header h2 {
@@ -119,7 +119,8 @@ header h2 {
   }
 }
 header p {
-  color: white;
+  color: #555555;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 48em) {
   header {
@@ -136,7 +137,6 @@ header p {
 
 /* ---------- content ----------  */
 #posts {
-  margin-top: 0;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 48em) {
@@ -191,7 +191,7 @@ header p {
 }
 
 #meta {
-  color: #999999;
+  color: #888888;
   margin-top: 30px;
   font-size: 0.8em;
   -webkit-transition: all 0.5s ease-in-out;
@@ -213,13 +213,13 @@ header p {
 
 /* ---------- footer ---------- */
 footer {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 0.8em;
 }
 footer nav.footerNav {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 footer nav.footerNav li {
   display: block;
@@ -232,5 +232,6 @@ footer nav.footerNav li {
   }
 }
 footer p {
-  color: #666666;
+  color: #555555;
+  font-size: .8em;
 }
