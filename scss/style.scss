@@ -132,9 +132,15 @@ header {
 
 	& p {
 		padding-bottom: 20px;
+		font-size: $size-standard;
 
 		&:last-child {
 			padding-bottom: 0;
+		}
+
+		@include breakpoint($mq-large) {
+			font-size: $size-standard + .2em;
+			line-height: 1.6em;
 		}
 	}
 
