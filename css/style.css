@@ -106,7 +106,7 @@ h3 {
 header {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #333333;
+  background: #222222;
   text-align: center;
 }
 header h2 {
@@ -125,7 +125,8 @@ header h2 a:hover {
   }
 }
 header p {
-  color: #666666;
+  color: #555555;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 48em) {
   header {
@@ -203,7 +204,7 @@ header p {
   color: white;
 }
 .post.link {
-  background-color: #f2f2f2;
+  background-color: #e1e1e1;
 }
 .post.link blockquote {
   border-left: solid 4px #ff9900;
@@ -219,7 +220,7 @@ header p {
 }
 
 #meta {
-  color: #999999;
+  color: #888888;
   margin-top: 30px;
   font-size: 0.8em;
   -webkit-transition: all 0.5s ease-in-out;
@@ -260,5 +261,5 @@ footer nav.footerNav li {
   }
 }
 footer p {
-  color: #666666;
+  color: #555555;
 }

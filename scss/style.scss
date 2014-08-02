@@ -91,6 +91,7 @@ header {
 
 	& p {
 		color: lighten($color-dark, 20%);
+		text-transform: uppercase;
 	}
 
 	@include breakpoint($mq-medium) {
